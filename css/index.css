@@ -1,0 +1,443 @@
+/*======================================
+//--//-->   DOCUMENT
+======================================*/
+body{
+    font-family: "Nunito", sans-serif;
+    background-color: #ffffff;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+/*======================================
+//--//-->   LOADER
+#loader_bg{
+  position: fixed;
+  z-index: 9999;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+}
+.spinner-grow{
+  margin-top: 23rem;
+}
+======================================*/
+
+
+/*======================================
+//--//-->   NAVBAR
+======================================*/
+
+/*--/ Navbar changing on scrolling /--*/
+.navbar-dark{
+  transition:500ms ease;
+  background:transparent;
+}
+.navbar-dark.scrolled{
+  background:#000000;
+}
+.nav-link{
+  font-size: 1rem;
+}
+
+/*--/ Logo Mimo/--*/
+.navbar-brand{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/*--/ Sections /--*/
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2rem;
+}
+.nav-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #fff;
+    transition: width .3s;
+}
+.nav-link:hover::after{
+    width: 70%;
+    transition: width .3s;
+}
+@media(max-width: 990px){
+    .nav-link:hover::after{
+        width: 7%;
+        transition: width .3s;
+    }
+  }
+
+/*--/ Hamburger Navbar /--*/
+#nav-icon1 {
+  width: 45px;
+  height: 25px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+#nav-icon1 span {
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  border-radius: 5px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+#nav-icon1 span:nth-child(2) {
+  top: 9px;
+}
+#nav-icon1 span:nth-child(3) {
+  top: 18px;
+}
+#nav-icon1.open span:nth-child(1) {
+  top: 9px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+#nav-icon1.open span:nth-child(3) {
+  top: 9px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+
+
+  /*======================================
+//--//-->   SECTION 1
+======================================*/
+/*--/ Home /--*/
+  h1{
+    font-size: 2.6rem;
+    color: black;
+  }
+  #title{
+    color: #ffffff;
+  }
+  h2 {
+    font-size: 2.2rem;
+    color: #ffffff;
+  }
+  .section-home{
+    margin-top: 18rem;
+  }
+
+  /*--/ Discover more Button /--*/
+  .button-scopri{
+    border: solid 2px white;
+    color: #ffffff;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    padding: 1.1rem;
+    border-radius: 100px;
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .button-scopri:hover{
+    opacity: 0.5;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+/*--/ Background Image /--*/
+.intro {
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+.bg-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  
+
+    /*======================================
+//--//-->   SECTION 2
+======================================*/
+/*--/ General box /--*/
+.box2{
+  background: #ffffff;
+  margin-top: 15rem;
+  padding-top: 5rem;
+  height: auto;
+  width: auto;
+  border: solid 1.5px #adadad;
+  border-radius: 15px;
+  box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*--/ Img profile /--*/
+.section-foto{
+  padding-left: 3.5rem;
+  padding-bottom: 4rem;
+}
+
+/*--/ Dates and experiences /--*/
+.section-info{
+  padding-left: 3.5rem;
+  padding-bottom: 3.5rem;
+  padding-right: 3.5rem;
+}
+.date{
+  padding-right: 2rem;
+  }
+dt{
+  font-size: 1.2rem;
+}
+dd{
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+.fa-circle { /* per distanziare icona e testo successivo */
+  margin: 0 6px 0 0;
+  font-size: 15px;
+  color: #CB3617;
+}
+.numeri{
+  font-weight: 700;
+}
+
+
+
+/*======================================
+//--//-->   SEPARATION LINE 1
+======================================*/
+.separation{
+  margin-top: 4rem;
+}
+
+
+
+/*======================================
+//--//-->   SECTION 3
+======================================*/
+/*--/ General Box /--*/
+.services{
+  margin-top: 3rem;
+}
+
+/*--/ First box /--*/
+.consulenza{
+  background-color: #ffffff;
+  border: solid 1.5px #adadad;
+  height: 23rem;
+  padding-bottom: 3.5rem;
+  float: left;
+  width: 100%;
+  padding-top: 3.5rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  border-radius: 15px;
+  box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*--/ Second box /--*/
+.reddito{
+  background-color: #ffffff;
+  border: solid 1.5px #adadad;
+  height: 23rem;
+  float: right;
+  width: 100%;
+  padding-top: 3.5rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  padding-bottom: 3.5rem;
+  border-radius: 15px;
+  box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.service-1, .service-2{
+  padding-bottom: 3rem;
+}
+
+/*--/ Titles /--*/
+h4{
+  margin-top: 3rem;
+}
+
+
+
+/*======================================
+//--//-->   SEPARATION LINE 2
+======================================*/
+.separation-1{
+  margin-top: 1.2rem;
+}
+
+
+
+/*======================================
+//--//-->   SECTION 4
+======================================*/
+/*--/ General Box /--*/
+.box4{
+  background-color: #ffffff;
+  margin-top: 3.5rem;
+  padding-top: 5rem;
+  padding-left: 3.5rem;
+  padding-bottom: 3rem;
+  padding-right: 3.5rem;
+  height: auto;
+  width: auto;
+  border: solid 1.5px #adadad;
+  border-radius: 15px;
+  box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*--/ Google Map /--*/
+.section-4{
+  margin-top: 1rem;
+}
+iframe{
+  height: 26rem;
+  width: 100%;
+}
+
+/*--/ Icons /--*/
+dt{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+dd{
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+.fa-map-marker-alt, .fa-phone, .fa-fax, .fa-at { /* per distanziare icona e testo successivo */
+  margin: 0 9px 0 0;
+  font-size: 45px;
+  color: #adadad;
+}
+dt.col-sm-10{
+  padding-left: 0;
+}
+.elenco{
+  padding-left: 3rem;
+  padding-top: 3rem;
+}
+.fax{
+  padding-top: 0.6rem;
+}
+.email{
+  text-decoration: underline;
+  color: #000000;
+}
+
+
+
+/*======================================
+//--//-->   SECTION 5
+======================================*/
+/*--/ Form /--*/
+.titolo-5{
+  margin-top: 4.5rem;
+}
+label{
+  font-weight: 600;
+}
+.form-control{
+  background-color: #dadada;
+  border: 1px solid #adadad;
+  margin-bottom: 1.5rem;
+}
+textarea.form-control{
+  height: 14rem;
+}
+.alert{
+  display: none;
+}
+
+/*--/ submit button /--*/
+.invia{
+  margin-top: 3rem;
+}
+.button-send{
+  background-color: #CB3617;
+  border-radius: 100px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 1.1rem;
+  width: 150px;
+  box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/*======================================
+//--//-->   BOTTOM PAGE
+======================================*/
+.fondo{
+  margin-top: 4.5rem;
+  margin-bottom: 3rem;
+}
+
+
+/*======================================
+//--//-->   BACK TO TOP BUTTON
+======================================*/
+#back2Top {
+  color: #000000;
+  font-size: 2.5rem;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  text-decoration: none;
+}
+#back2Top:hover{
+  color: #adadad;
+}
+.btn-back{
+  float: right;
+}
